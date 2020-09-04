@@ -1,0 +1,17 @@
+news_sites:
+  futbolred:
+    url: 'https://www.vanguardia.com/'
+    queries: 
+      homepage_article_links: '//span[@class="priority-content"]/ancestor::a/@href'
+      article_title: '//span[@class="priority-content"]/text()'
+      article_headline: '//div[contains(@class, "subheadline")]/text()'
+      article_body: '//div[@class="paragraph"]/p/text()'
+      article_date: '//div[contains(@class, "date")]/text()'
+  antena2:
+    url: 'https://www.antena2.com/'
+    queries: 
+      homepage_article_links:
+      article_title: 
+      article_headline: 
+      article_body: 
+      article_date: 
