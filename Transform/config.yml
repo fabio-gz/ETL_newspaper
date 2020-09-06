@@ -1,17 +1,15 @@
 news_sites:
-  futbolred:
-    url: 'https://www.vanguardia.com/'
+  vanguardia:
+    url: https://www.vanguardia.com/
     queries: 
-      homepage_article_links: '//span[@class="priority-content"]/ancestor::a/@href'
-      article_title: '//span[@class="priority-content"]/text()'
-      article_headline: '//div[contains(@class, "subheadline")]/text()'
-      article_body: '//div[@class="paragraph"]/p/text()'
-      article_date: '//div[contains(@class, "date")]/text()'
+      homepage_article_links: '.noticias a'
+      article_body: '.paragraph'
+      article_date: 'div[itemprop="datepublished"]'
+      article_title: '.priority-content'
   antena2:
-    url: 'https://www.antena2.com/'
+    url: https://www.antena2.com/
     queries: 
-      homepage_article_links:
-      article_title: 
-      article_headline: 
-      article_body: 
-      article_date: 
+      homepage_article_links: '.title-three a'
+      article_body: 'div[property="schema:text"]'
+      article_title: '.title-resumen h1'
+      article_date: '.box-section-date time'
